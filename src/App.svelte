@@ -10,6 +10,7 @@
 		{text : "LinkedIn", url : "https://www.linkedin.com/in/louirecio/"},
 		{text : "GitHub", url : "https://github.com/louire/"}
 	];
+	let imgLink = {url : "https://avatars.githubusercontent.com/u/71304021?v=4"};
 </script>
 
 <style>
@@ -21,7 +22,7 @@
 </style>
 
 <div class="containerCentre">
-	<ProfilePicture/>
+	<ProfilePicture {...imgLink} />
 	<p>
 		@louire
 		<br>

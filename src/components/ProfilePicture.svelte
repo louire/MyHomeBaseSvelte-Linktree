@@ -1,3 +1,7 @@
+<script>
+	export let url;
+</script>
+
 <style>
     .profile-picture {
 	width: 200px;
@@ -9,7 +13,6 @@
 
 
 <div class="ProfilePicture">
-    <img src="https://avatars.githubusercontent.com/u/71304021?v=4" 
-	class="profile-picture"
-	alt="ProfilePicture, yeah its me :D"/>
+	<img src={url} alt="ProfilePicture, yeah its me :D" class="profile-picture">
+    
 </div>
