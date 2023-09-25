@@ -1,6 +1,6 @@
 <!--All needs to be responsive-->
 <script>
-  import { each } from "svelte/internal";
+  	import { each } from "svelte/internal";
 	import LinksButton from "./components/LinksButton.svelte";
 	import ProfilePicture from "./components/ProfilePicture.svelte";
 
@@ -10,19 +10,19 @@
 		{text : "LinkedIn", url : "https://www.linkedin.com/in/louirecio/", iconButton : "👔"},
 		{text : "GitHub", url : "https://github.com/louire/", iconButton : "🐙"},
 	];
+	
 	let imgLink = {url : "https://avatars.githubusercontent.com/u/71304021?v=4"};
 </script>
 
 <style>
-body {
-	background-color: #4B527E;
-	color: #fff;
-	font-family: Verdana;
-}
-.containerCentre {
-	text-align: center;
-}
-
+	body {
+		background-color: #4B527E;
+		color: #fff;
+		font-family: Verdana;
+	}
+	.containerCentre {
+		text-align: center;
+	}
 </style>
 
 <body>
@@ -39,7 +39,4 @@ body {
 		{/each}
 	
 	</div>
-	
-		
 </body>
-

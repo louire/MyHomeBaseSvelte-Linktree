@@ -25,5 +25,4 @@
 
 <div class="LinksButtons">
 	<a href={url} target="_blank" class="button">{iconButton} {text}</a>
-
 </div>
