@@ -1,6 +1,7 @@
 <script>
 	export let url;
 	export let text;
+	export let iconButton;
 </script>
 
 
@@ -23,6 +24,6 @@
 
 
 <div class="LinksButtons">
-	<a href={url} target="_blank" class="button">{text}</a>
+	<a href={url} target="_blank" class="button">{iconButton} {text}</a>
 
 </div>

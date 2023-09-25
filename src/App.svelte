@@ -5,10 +5,10 @@
 	import ProfilePicture from "./components/ProfilePicture.svelte";
 
 	let links= [
-		{text : "medium", url : "https://medium.com/@louirecio"},
-		{text : "Twitter / X", url : "https://twitter.com/louireciok"},
-		{text : "LinkedIn", url : "https://www.linkedin.com/in/louirecio/"},
-		{text : "GitHub", url : "https://github.com/louire/"}
+		{text : "medium", url : "https://medium.com/@louirecio", iconButton : "📝"},
+		{text : "Twitter / X", url : "https://twitter.com/louireciok" , iconButton : "🐦"},
+		{text : "LinkedIn", url : "https://www.linkedin.com/in/louirecio/", iconButton : "👔"},
+		{text : "GitHub", url : "https://github.com/louire/", iconButton : "🐙"},
 	];
 	let imgLink = {url : "https://avatars.githubusercontent.com/u/71304021?v=4"};
 </script>
