@@ -4,11 +4,13 @@
 
 <style>
     .profile-picture {
+		
 	width: 200px;
 	margin-top: 35px;
 	border-radius: 50%;
 	object-fit: cover;
 }
+	
 </style>
 
 

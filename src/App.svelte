@@ -28,6 +28,7 @@ body {
 <body>
 	<div class="containerCentre">
 		<ProfilePicture {...imgLink} />
+		
 		<p>
 			@louire
 			<br>
