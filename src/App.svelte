@@ -14,24 +14,31 @@
 </script>
 
 <style>
-
+body {
+	background-color: #4B527E;
+	color: #fff;
+	font-family: Verdana;
+}
 .containerCentre {
 	text-align: center;
 }
 
 </style>
 
-<div class="containerCentre">
-	<ProfilePicture {...imgLink} />
-	<p>
-		@louire
-		<br>
-		Loui Recio Izaguirre
-	</p>
-	{#each links as link}
-		<LinksButton {...link} />
-	{/each}
-
-</div>
-
+<body>
+	<div class="containerCentre">
+		<ProfilePicture {...imgLink} />
+		<p>
+			@louire
+			<br>
+			Loui Recio Izaguirre
+		</p>
+		{#each links as link}
+			<LinksButton {...link} />
+		{/each}
+	
+	</div>
+	
+		
+</body>
 
