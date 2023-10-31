@@ -1,6 +1,6 @@
 <!--All needs to be responsive-->
 <script>
-  	import { each } from "svelte/internal";
+  	import { each, src_url_equal } from "svelte/internal";
 	import LinksButton from "./components/LinksButton.svelte";
 	import ProfilePicture from "./components/ProfilePicture.svelte";
 
@@ -12,6 +12,8 @@
 	];
 	
 	let imgLink = {url : "https://avatars.githubusercontent.com/u/71304021?v=4"};
+
+
 </script>
 
 <style>
@@ -23,6 +25,22 @@
 	.containerCentre {
 		text-align: center;
 	}
+	footer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin-top: 50px;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 16px;
+	}
+	footer span {
+        margin-left: 10px;
+    }
+    footer img {
+        max-width: 15px;
+
+    }
 </style>
 
 <body>
@@ -37,6 +55,15 @@
 		{#each links as link}
 			<LinksButton {...link} />
 		{/each}
-	
+		
+		
+		<footer> 
+			Made with ❤️ and 
+			<span>Svelte </span>
+			<span>
+				<img src ="./images/svelte-svgrepo-com.png" alt="Svelte logo" />
+			</span>
+		</footer>
+
 	</div>
 </body>
