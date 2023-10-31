@@ -1,5 +1,5 @@
 
-(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35736/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
+(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
 var app = (function () {
     'use strict';
 
@@ -783,7 +783,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (37:2) {#each links as link}
+    // (55:2) {#each links as link}
     function create_each_block(ctx) {
     	let linksbutton;
     	let current;
@@ -829,7 +829,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(37:2) {#each links as link}",
+    		source: "(55:2) {#each links as link}",
     		ctx
     	});
 
@@ -846,6 +846,14 @@ var app = (function () {
     	let br;
     	let t2;
     	let t3;
+    	let t4;
+    	let footer;
+    	let t5;
+    	let span0;
+    	let t7;
+    	let span1;
+    	let img;
+    	let img_src_value;
     	let current;
     	const profilepicture_spread_levels = [/*imgLink*/ ctx[1]];
     	let profilepicture_props = {};
@@ -887,12 +895,30 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(br, file, 33, 3, 891);
-    			add_location(p, file, 31, 2, 873);
-    			attr_dev(div, "class", "containerCentre svelte-1bkljb8");
-    			add_location(div, file, 28, 1, 804);
-    			attr_dev(body, "class", "svelte-1bkljb8");
-    			add_location(body, file, 27, 0, 796);
+    			t4 = space();
+    			footer = element("footer");
+    			t5 = text("Made with ❤️ and \n\t\t\t");
+    			span0 = element("span");
+    			span0.textContent = "Svelte";
+    			t7 = space();
+    			span1 = element("span");
+    			img = element("img");
+    			add_location(br, file, 51, 3, 1198);
+    			add_location(p, file, 49, 2, 1180);
+    			attr_dev(span0, "class", "svelte-1139y1s");
+    			add_location(span0, file, 61, 3, 1339);
+    			if (!src_url_equal(img.src, img_src_value = "./images/svelte-svgrepo-com.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "Svelte logo");
+    			attr_dev(img, "class", "svelte-1139y1s");
+    			add_location(img, file, 63, 4, 1374);
+    			attr_dev(span1, "class", "svelte-1139y1s");
+    			add_location(span1, file, 62, 3, 1363);
+    			attr_dev(footer, "class", "svelte-1139y1s");
+    			add_location(footer, file, 59, 2, 1305);
+    			attr_dev(div, "class", "containerCentre svelte-1139y1s");
+    			add_location(div, file, 46, 1, 1111);
+    			attr_dev(body, "class", "svelte-1139y1s");
+    			add_location(body, file, 45, 0, 1103);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -914,6 +940,13 @@ var app = (function () {
     				}
     			}
 
+    			append_dev(div, t4);
+    			append_dev(div, footer);
+    			append_dev(footer, t5);
+    			append_dev(footer, span0);
+    			append_dev(footer, t7);
+    			append_dev(footer, span1);
+    			append_dev(span1, img);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -938,7 +971,7 @@ var app = (function () {
     						each_blocks[i] = create_each_block(child_ctx);
     						each_blocks[i].c();
     						transition_in(each_blocks[i], 1);
-    						each_blocks[i].m(div, null);
+    						each_blocks[i].m(div, t4);
     					}
     				}
 
@@ -1028,6 +1061,7 @@ var app = (function () {
 
     	$$self.$capture_state = () => ({
     		each,
+    		src_url_equal,
     		LinksButton,
     		ProfilePicture,
     		links,
